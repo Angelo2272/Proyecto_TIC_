@@ -1,1 +1,0 @@
-Error: sysbench no está instalado o no se encuentra en el PATH del sistema.
