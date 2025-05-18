@@ -14,3 +14,6 @@ END=$(date +%s)
 echo "Tiempo total: $((END - START)) segundos"
 
 echo "Servidor corriendo en: http://localhost:8081"
+
+
+# Para ejecutar el script "./deploy_vm.sh"
