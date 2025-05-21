@@ -1,0 +1,20 @@
+services:
+  supermercado:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: supermercado-chao
+    volumes:
+      - ./comparison:/usr/share/nginx/html:ro
+      - ./notebooks/results:/app/results
+
+  monitor:
+    image: python:3.11
+    container_name: system-monitor
+    volumes:
+      - ./notebooks:/app
+      - ./notebooks/results:/app/results
+    working_dir: /app
+    entrypoint: sh -c "pip install psutil matplotlib && python vm_vs_docker_comparison.py"

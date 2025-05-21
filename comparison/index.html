@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Supermercado CHAO</h1>
+        <div class="cart-info">
+            <span id="cart-count">0</span> productos - $<span id="cart-total">0.00</span>
+            <button id="view-cart">Ver Carrito</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <h2>Categorías</h2>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="frutas">Frutas</button>
+                <button class="category-btn" data-category="verduras">Verduras</button>
+                <button class="category-btn" data-category="lacteos">Lácteos</button>
+                <button class="category-btn" data-category="carnes">Carnes</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Productos</h2>
+            <div class="product-grid" id="product-container">
+             
+            </div>
+        </section>
+    </main>
+
+   
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items">
+                
+                <p class="empty-cart">El carrito está vacío</p>
+            </div>
+            <div class="cart-actions">
+                <button id="clear-cart">Vaciar Carrito</button>
+                <button id="checkout">Pagar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="TIC.js"></script>
+</body>
+</html>
