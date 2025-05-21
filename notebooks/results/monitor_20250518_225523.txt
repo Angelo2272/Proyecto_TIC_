@@ -1,6 +1,0 @@
-Monitoreo del sistema - 2025-05-18 22:55:23
-
-Uso de CPU: 0.0
-Uso de Memoria: 8.3
-Tiempo de Carga (Latencia): 1.0007
-Uso del Disco: 0.5
